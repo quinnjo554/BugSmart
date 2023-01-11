@@ -4,7 +4,7 @@ import hero from './asset/hero.jpg'
 export const Hero = () => {
   return (
     <div className='w-full font-sans'>
-        <div className="flex w-max pt-72">
+        <div className="flex w-max pt-96">
           <div className='invisible text-white md:visible lg:visible justify-center pl-32 align-middle w-[800px]'>
             {/**have card do a fade in animation onload*/}
             <h1 className='pb-6 font-sans text-5xl'>The best way to debug your project</h1>

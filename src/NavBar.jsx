@@ -21,9 +21,11 @@ import { useState } from 'react';
                              <a className='' href={nav.src}>{nav.content}</a>
                        </li>
                 }
-                return <li className='mr-10' key={nav.id}>{/**check if  */}
-                <a className='hover:text-gray-400' href={nav.src}>{nav.content}</a>
-            </li>
+                return (
+                  <li className='mr-10 ' key={nav.id}>{/**check if  */}
+                    <a className='border-b-0 hover:border-b-4 rounded-sm pb-[1.75rem] transition-all ease-in border-zinc-600 hover:text-gray-400' href={nav.src}>{nav.content}</a>
+                  </li>
+                );
             })}
         </ul>
        
@@ -32,10 +34,9 @@ import { useState } from 'react';
         <img src={isMenuDropped ? close : dropDown} className=" ml-48" width={"30px"} height={"30px"} alt="drop-down-icon"
         onClick={()=>toggleMenu((prev)=>!prev)}/>
         {navItems.map((nav, index)=>{
-                
                 if(isMenuDropped){
-                 return <li id="mobile-li" className='relative right-7 rounded-md bg-blue-600 mt-1 ml-44 self-center' key={nav.id}>
-                    <a className='align-middle  ml-6' href={nav.src}>{nav.content}</a>
+                 return <li id="mobile-li" className='relative right-7 rounded-md text-white bg-blue-600 mt-1 ml-44 self-center' key={nav.id}>
+                    <a className='align-middle  ml-7' href={nav.src}>{nav.content}</a>
                 </li>
                 }
                 return
