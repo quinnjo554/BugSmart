@@ -3,7 +3,7 @@ import hero from './asset/hero.jpg'
 
 export const Hero = () => {
   return (
-    <div className='w-full font-sans'>
+    <div id='hero' className='w-full font-sans'>
         <div className="flex w-max pt-96">
           <div className='invisible text-white md:visible lg:visible justify-center pl-32 align-middle w-[800px]'>
             {/**have card do a fade in animation onload*/}
@@ -25,7 +25,7 @@ export const Hero = () => {
             <p className=' pb-5 text-lg'>Lorem ipsum dolor sit amet consectetur 
             adipisicing elit. Enim velit doloremque alias architecto nemo labore 
             praesentium dolorem dicta reprehenderit?</p>
-            <a><button className=' shadow-black shadow-lg bg-blue-600 p-3 rounded-md hover:shadow-transparent'>sign up for free</button></a>
+            <a><button className=' shadow-black shadow-lg bg-blue-600 p-3 rounded-md hover:shadow-transparent'>view on github</button></a>
           </div>
         </div>
           </div>
