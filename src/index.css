@@ -18,7 +18,7 @@ html{
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #fffcfc;
+  background-color: linear-gradient(red 50%, blue 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,7 +30,14 @@ html{
 #mobile-li{
   animation: fade-in 2s ;
 }
-
+#logo{
+  position: relative;
+  display: inline;
+  left: 59%;
+}
+#items{
+  color: aqua;
+}
 
 #hero{
   background-image: url('./asset/sateratedHeroimg.jpg');
@@ -40,7 +47,33 @@ html{
 }
 
 @keyframes fade-in {
-  10%{
-    right: 30%;
+  0%{
+    left: -30rem;
   }
+  100%{
+    left: 0.5rem;
+  }
+}
+
+nav.collapsed{
+  width:10rem;
+  margin-right: 100px;
+  transition: width .2s ease-in;
+  
+}
+nav.collapsed img{
+
+  transition: opacity;
+
+}
+
+nav.expanded{
+  background-color: black;
+  width:0px;
+  
+  transition:background-color, width .2s ease-in;
+  
+}
+nav.collapsed ul{
+  animation: fade-in .2s forwards;
 }

@@ -44,6 +44,7 @@ export const navItemsLoggedIn=[
     id:"home-1",
     content:"Home",
     src:"./",
+    img:'',
 },
 {
     id:"projects",
@@ -58,7 +59,7 @@ export const navItemsLoggedIn=[
 {
     //add a weather function
     id:"Calendar",
-    content:"calendar",
+    content:"Calendar",
     src:"./",
 },
 {
