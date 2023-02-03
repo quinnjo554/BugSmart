@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ReactPropTypes } from 'react'
 function Card({name, count, img}) {
   return (
     <div id='container' className='w-max inline-block h-max'>
@@ -15,5 +15,8 @@ function Card({name, count, img}) {
 
   )
 }
+
+
+
 
 export default Card

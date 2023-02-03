@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 //communicates with asp.net
 export async function get(){
     try{
-    const response = await fetch("https://localhost:7290/WeatherForecast");
+    const response = await fetch("https://localhost:7290/User");
     const data = await response.json();
     console.log(data);
     }
@@ -14,7 +14,13 @@ export async function get(){
 }
 
 
-
+export const navItemsLogout=[
+{
+    id:"login",
+    content:"Logout",
+    src:"./",
+},
+]
 
 export const navItems=[
 {
@@ -30,13 +36,9 @@ export const navItems=[
 {
     id:"signup",
     content:"Sign In",
-    src:"./MainPage",
+    src:"",
 },
-{
-    id:"login",
-    content:"Login",
-    src:"./",
-},
+
 ];
 
 export const navItemsLoggedIn=[
