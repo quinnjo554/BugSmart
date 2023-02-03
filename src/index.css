@@ -97,18 +97,18 @@ nav.collapsed ul{
     right: 10%;
     top: 35%;
     color: whitesmoke;
-    background-image: url("./asset/vecteezy_background-flatvector2-background_fr0121.jpg");
+    background-image: url("./asset/imageSymmetic.jpg");
     background-size: cover;
-    padding:10rem 0 0;
-    max-width: 55ch;
-    min-width: 45ch;
+    padding:8rem 0 0;
+    max-width: 45ch;
+    min-width: 35ch;
     border-radius: .5rem;
     overflow:hidden;
     transition-delay: 200ms;
     transition:transform 500ms ease;
     margin-top: 25px;
-    animation:slideImg 10s infinite;    
-
+    animation:slideImg 120s infinite;    
+    animation-timing-function: linear;
 
 }
 @media (max-width:1400px) {
@@ -143,8 +143,8 @@ nav.collapsed ul{
    
 }
 .card-body{
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     color: rgba(255, 255, 255, .82);
 }
 .title{
@@ -185,11 +185,12 @@ nav.collapsed ul{
 }
 @keyframes slideImg {
   
-  from {
+  0% {
     background-position: 0 0;
   }
-  to {
-    background-position: 411% 0;
+ 
+  100% {
+    background-position: 751% 0;
   }
 
 }
