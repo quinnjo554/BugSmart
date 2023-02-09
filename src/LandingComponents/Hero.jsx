@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from './asset/hero.jpg'
+import hero from '../asset/hero.jpg'
 import { TypeAnimation } from 'react-type-animation'; // Use type animation for bugs
 
 export const Hero = () => {

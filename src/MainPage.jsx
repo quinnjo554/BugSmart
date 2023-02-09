@@ -1,11 +1,11 @@
 import React from 'react'
-import BugTrackerHero from './BugTrackerHero'
-import BugTrackerNav from './BugTrackerNav'
+import BugTrackerHero from './Components/BugTrackerHero'
+import BugTrackerNav from './Components/BugTrackerNav'
 
 
 export default function MainPage() {
   return (
-    <div>
+    <div id='bugHero'>
         <BugTrackerNav/>
         <BugTrackerHero/>
     </div>

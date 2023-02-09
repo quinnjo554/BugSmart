@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 //communicates with asp.net
 export async function get(){
     try{
-    const response = await fetch("https://localhost:7290/User");
+    const response = await fetch("https://localhost:7290/api/User");
     const data = await response.json();
     console.log(data);
     }
@@ -13,6 +13,21 @@ export async function get(){
     }
 }
 
+export async function postUser(name,email) {
+    try {
+        const response = await fetch("https://localhost:7290/api/User", {
+        method:"POST",
+        headers: { 'Content-Type': 'application/json' },
+        body:JSON.stringify({
+                  "name": name,
+                  "email": email
+         })      
+        });
+    } catch (error) {
+        console.log(error);
+    }
+}
+export const Bugs = [{}];
 
 export const navItemsLogout=[
 {
@@ -70,6 +85,16 @@ export const navItemsLoggedIn=[
     id:"milestones",
     content:"Milestones",
     src:"./",
+},
+{
+    id:"bugs",
+    content:"Bugs",
+    src:"./",
+},
+{
+    id:"account",
+    content:"Account",
+    src:"./Account"
 }
 ];
 

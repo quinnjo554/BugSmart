@@ -14,7 +14,7 @@ import SignIn from './Components/SignIn';
   return (
     <nav className=" z-10 fixed w-full bg-gray-100 rounded-lg px-2 py-5 flex justify-between items-center shadow-xl shadow-black text-black">
       
-            <img className='px-3' src={bug} width={"60px"} height={"20px"} alt="logo"/>
+            <img className='px-3' src={bug} width={"65px"} height={"25px"} alt="logo"/>
             <h1 className=" font-sans text-lg p-0 cursor-default">Bug Smart</h1>
         <ul className=' h-full w-98 list-none sm:flex hidden ml-16 justify-end items-center flex-1'>
         {navItems.map((nav, index)=>{

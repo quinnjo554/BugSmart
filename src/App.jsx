@@ -1,10 +1,10 @@
 import React from 'react';
 import NavBar from './NavBar';
-import Hero from './Hero';
-import BugTrackerHero from './BugTrackerHero';
-import { BugTrackerNav } from './BugTrackerNav';
+import Hero from './LandingComponents/Hero';
+import BugTrackerHero from './Components/BugTrackerHero';
+import { BugTrackerNav } from './Components/BugTrackerNav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from './LandingPage';
+import LandingPage from './LandingComponents/LandingPage';
 import MainPage from './MainPage';
 
 
