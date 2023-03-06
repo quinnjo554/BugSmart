@@ -8,8 +8,7 @@ function LandingPage() {
     <div>
        <NavBar/>
         <Hero/> 
-        <HeroInfoCard/>
-       
+        <HeroInfoCard/>   
     </div>
   )
 }

@@ -19,7 +19,6 @@ function Widget(props) {
           <li>assignedTo</li>
           <li>importance</li>
           <li>status</li>
-          
         </ul>
         <button className='relative left-[96%] bottom-0 h-min w-max' type="Button"><img src={add} width="22px" height="25px" alt="add" /></button>
       </div>

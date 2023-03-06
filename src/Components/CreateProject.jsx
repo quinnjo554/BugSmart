@@ -1,5 +1,8 @@
 import React from 'react'
 import add from '../asset/add.png'
+
+//use UseRef because you dont need to rerender only need value on submit
+
 function CreateProject() {
   return (
     <div className='z-["-1"] fixed top-32 w-fit h-max text-zinc-100 align-center'>

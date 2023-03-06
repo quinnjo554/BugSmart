@@ -49,12 +49,12 @@ html{
 
 #container:hover{
   transform: scale(1.05);
-  transition: transform 300ms ease-in ;
+  transition: transform 300ms ease-in-out ;
 }
 #container{
   transform: scale(1.00);
   /*off hover*/
-  -webkit-transition: transform 100ms;
+  -webkit-transition: transform 300ms;
 }
 #content:hover{
   box-shadow: 2px 5px 10px black;

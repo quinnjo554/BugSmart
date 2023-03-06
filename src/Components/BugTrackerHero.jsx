@@ -14,7 +14,7 @@ import { getProjByUserId } from '..';
 import CreateProject from './CreateProject';
 
 export const BugTrackerHero = ()=> {
-
+//some can def be just refs instead
 const {user,isAuthenticated} = useAuth0();
 const [isUserPosted, setIsPosted] = useState(false);
 const [isNewUser, setisNewUser] = useState(false);
@@ -53,7 +53,6 @@ const handlePostUser=()=>{
     }
   }
 }
-
 useEffect(()=>{
    handlePostUser();
 },[]);
@@ -62,14 +61,15 @@ useEffect(()=>{
   handleGetProj();
 },[isAuthenticated]);
 
+//this may be wrong idk
 if(isNewUser){
   return <CreateProject/>
 }
 
   return (
     <div>
-     <h1 className='fixed left-0 top-[5rem] rounded-md shadow-md shadow-black w-screen h-10 grid justify-center content-center bg-sky-600'>{currentProj}</h1>
-    <div className='z-["-1"] fixed left-14 top-32 w-fit h-max text-zinc-100 align-center'>
+     <h1 className='fixed left-0 top-[5rem] rounded-md shadow-md shadow-black w-screen h-16 grid justify-center content-center bg-sky-600'>{currentProj}</h1>
+    <div className='z-["-1"] fixed left-14 top-40 w-fit h-max text-zinc-100 align-center'>
       <Card name="Bugs" count={5} img={bug}></Card>
       <Card name="Milestones" count={5} img={bug}></Card>
       <Card name="Overdue" count={0} img={bug}></Card>

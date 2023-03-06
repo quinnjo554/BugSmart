@@ -11,7 +11,7 @@ function HeroInfoCard() {
                 <h1 className="title text-purple-200">Check Out the Creators!</h1>
                 <p className="card-body">Meet the creators of this web app and find our contacts! 
                 </p>
-                <a className="button" href="#" target="_self">Go to</a>
+                <a className="button" href="https://github.com/quinnjo554" target="_blank">Go to</a>
             </div>
        </div>
 </div>
