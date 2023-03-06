@@ -7,7 +7,12 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Auth0Provider
+<<<<<<< HEAD
    
+=======
+    domain=""
+    clientId=""
+>>>>>>> 0cac37d107d86efdd124f95cbf77eb18ba4c36ea
     
     authorizationParams={{
       redirect_uri: "http://localhost:5173/MainPage"
